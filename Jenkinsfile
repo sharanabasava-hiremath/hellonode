@@ -30,7 +30,7 @@ node {
          * Pushing multiple tags is cheap, as all the layers are reused. */
         docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
             app.push()
-            app.push("latest")
+            app.push("hirsh05/custom-image:latest")
         }
     }
 }
